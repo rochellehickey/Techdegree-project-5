@@ -1,12 +1,22 @@
-/* ------------------------------------- */
-/*           VARIABLES PARTIAL           */
-/* ------------------------------------- */
+// -------------------------------------
+//           VARIABLES PARTIAL
+// -------------------------------------
 
 
-/* ---------------- FONTS -------------- */
+// ---------------- FONTS --------------
+
+$font-stack: 'Helvetica Neue', Helvetica, sans-serif;
+
+$font-weight-thin    : 100;
+$font-weight-regular : 300;
+$font-weight-bold    : 600;
+
+@function em($pixels, $context: 16px) {
+  @return ($pixels / $context) * 1em;
+}
 
 
-/* ------------- BREAKPOINTS ----------- */
+// ------------- BREAKPOINTS -----------
 
 
-/* --------------- COLORS -------------- */
+// --------------- COLORS --------------

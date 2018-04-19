@@ -1,3 +1,37 @@
-/* ------------------------------------- */
-/*              NAVIGATION               */
-/* ------------------------------------- */
+// -------------------------------------
+//              TYPOGRAPHY
+// -------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+p,
+legend,
+label,
+button,
+div {
+  font-family: $font-stack;
+}
+
+input[placeholder] {
+  font-family: $font-stack;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $font-weight-bold;
+}
+
+p {
+  font-weight: $font-weight-regular;
+  font-size: em(18px);
+  line-height: em(24px);
+}
+
+blockquote {
+  font-weight: $font-weight-regular;
+  font-size: em(16px);
+}
