@@ -6,11 +6,24 @@
 // ---------------- * ------------------
  * {
   box-sizing: border-box;
+  font-family: $font-stack;
 }
 
 
 // ------------- UL ELEMENTS -----------
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 // ------------ P ELEMENTS -------------
-// See TYPOGRAPHY.SCSS
+
+p {
+  font-weight: $font-weight-regular;
+  font-size: em(18px);
+  line-height: em(24px);
+  color: $grey;
+}

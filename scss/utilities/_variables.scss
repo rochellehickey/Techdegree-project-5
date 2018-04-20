@@ -11,12 +11,49 @@ $font-weight-thin    : 100;
 $font-weight-regular : 300;
 $font-weight-bold    : 600;
 
-@function em($pixels, $context: 16px) {
-  @return ($pixels / $context) * 1em;
-}
-
 
 // ------------- BREAKPOINTS -----------
 
 
 // --------------- COLORS --------------
+
+$cyan        : #64ddfb;
+$mint        : #6ee2c1;
+$evergreen   : #66cc82;
+$flamingo    : #e47479;
+$pumpkin     : #ed7553;
+$violet      : #927bc1;
+
+$cyan-light      : lighten(#64ddfb, 20%);
+$mint-light      : lighten(#6ee2c1, 20%);
+$evergreen-light : lighten(#66cc82, 20%);
+$flamingo-light  : lighten(#e47479, 20%);
+$pumpkin-light   : lighten(#ed7553, 20%);
+$violet-light    : lighten(#927bc1, 20%);
+
+$cyan-dark       : darken(#64ddfb, 20%);
+$mint-dark       : darken(#6ee2c1, 20%);
+$evergreen-dark  : darken(#66cc82, 20%);
+$flamingo-dark   : darken(#e47479, 20%);
+$pumpkin-dark    : darken(#ed7553, 20%);
+$violet-dark     : darken(#927bc1, 20%);
+
+$grey-light      : #c9c9c9;
+$grey-dark       : #5a5a5a;
+
+$font-color           : $grey-light;
+$font-nav-color       : $grey-dark;
+$nav-btn-color        : $mint;
+$primary-hdln-color   : $mint;
+$secondary-hdln-color : $grey-dark;
+$link-color           : $cyan;
+$default-btn-color    : $cyan;
+$success-btn-color    : $evergreen;
+$error-btn-color      : $flamingo;
+$warning-btn-color    : $pumpkin;
+$info-btn-color       : $violet;
+
+
+
+
+

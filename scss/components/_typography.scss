@@ -4,23 +4,17 @@
 
 .container {
   font-family: $font-stack;
+  color: $grey;
+  margin: 50px;
 }
 
 .form__input[placeholder] {
   font-family: $font-stack;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.headline--primary,
+.headline--secondary {
   font-weight: $font-weight-bold;
-}
-
-p {
-  font-weight: $font-weight-regular;
-  font-size: em(18px);
-  line-height: em(24px);
 }
 
 .blockquote {
