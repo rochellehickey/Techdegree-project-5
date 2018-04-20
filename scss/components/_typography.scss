@@ -2,19 +2,11 @@
 //              TYPOGRAPHY
 // -------------------------------------
 
-h1,
-h2,
-h3,
-h4,
-p,
-legend,
-label,
-button,
-div {
+.container {
   font-family: $font-stack;
 }
 
-input[placeholder] {
+.form__input[placeholder] {
   font-family: $font-stack;
 }
 
@@ -31,7 +23,7 @@ p {
   line-height: em(24px);
 }
 
-blockquote {
+.blockquote {
   font-weight: $font-weight-regular;
   font-size: em(16px);
 }
