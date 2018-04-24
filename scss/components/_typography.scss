@@ -24,7 +24,9 @@
 
 .blockquote {
   font-weight: $font-weight-light;
-  font-size: em(28px);
+  font-size: em(26px);
   font-style: italic;
+  padding-left: em(10px);
   border-left: em(5px) solid $blockquote-bdr-color;
+  border-radius: em(3px) em(3px);
 }

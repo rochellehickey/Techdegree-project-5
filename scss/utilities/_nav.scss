@@ -1,3 +1,17 @@
 // -------------------------------------
-//        NAV ITEMS PLACEHOLDERS
+//              NAV ITEMS
 // -------------------------------------
+
+.nav__item {
+  padding: em(15px);
+  width: 100%;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: $grey-dark;
+  &:hover {
+    color: $white;
+    background: $nav-btn-color;
+  }
+}
