@@ -4,9 +4,8 @@
 
 
 // ---------------- * ------------------
- * {
+* {
   box-sizing: border-box;
-  font-family: $font-stack;
 }
 
 
@@ -25,5 +24,4 @@ p {
   font-weight: $font-weight-regular;
   font-size: em(18px);
   line-height: em(24px);
-  color: $grey;
 }

@@ -4,7 +4,7 @@
 
 .container {
   font-family: $font-stack;
-  color: $grey;
+  color: $font-color;
   margin: 50px;
 }
 
@@ -12,12 +12,19 @@
   font-family: $font-stack;
 }
 
-.headline--primary,
-.headline--secondary {
+.headline--primary {
   font-weight: $font-weight-bold;
+  margin-left: 20px;
+}
+
+.headline--secondary {
+  font-size: em(18px);
+  font-weight: $font-weight-light;
 }
 
 .blockquote {
-  font-weight: $font-weight-regular;
-  font-size: em(16px);
+  font-weight: $font-weight-light;
+  font-size: em(28px);
+  font-style: italic;
+  border-left: em(5px) solid $blockquote-bdr-color;
 }
