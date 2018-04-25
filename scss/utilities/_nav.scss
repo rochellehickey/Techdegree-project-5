@@ -1,17 +1,16 @@
 // -------------------------------------
-//              NAV ITEMS
+//        NAV ITEMS PLACEHOLDER
 // -------------------------------------
 
-.nav__item {
-  padding: em(15px);
-  width: 100%;
-}
-
-.nav__item a {
+%nav__item--link {
   text-decoration: none;
   color: $grey-dark;
+  display: block;
+  padding: em(15px);
+  text-align: center;
   &:hover {
-    color: $white;
+    @extend %corner-radius;
+    color: $btn-text-color;
     background: $nav-btn-color;
   }
 }

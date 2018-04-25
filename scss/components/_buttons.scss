@@ -6,8 +6,34 @@
 .btn--success,
 .btn--error,
 .btn--warning,
-.btn--info,
-.theme__colors {
+.btn--info {
+  @extend %corner-radius;
+  padding: em(15px);
+  margin: em(15px) 0;
+  text-align: center;
   border: none;
-  background: none;
+  display: block;
+  width: 100%;
+  color: $btn-text-color;
+  text-transform: uppercase;
+}
+
+.btn--default.theme__colors {
+  background: $default-btn-color;
+}
+
+.btn--success.theme__colors {
+  background: $success-btn-color;
+}
+
+.btn--error.theme__colors {
+  background: $error-btn-color;
+}
+
+.btn--warning.theme__colors {
+  background: $warning-btn-color;
+}
+
+.btn--info.theme__colors {
+  background: $info-btn-color;
 }

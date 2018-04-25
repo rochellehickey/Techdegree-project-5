@@ -1,11 +1,17 @@
 // -------------------------------------
-//             HEADLINES
+//       HEADLINES PLACEHOLDERS
 // -------------------------------------
 
-.headline--primary {
+
+%headline--primary {
+  font-size: em(32px);
+  font-weight: $font-weight-bold;
   color: $primary-hdln-color;
+  margin-left: 20px;
 }
 
-.headline--secondary {
+%headline--secondary {
+  font-size: em(18px);
+  font-weight: $font-weight-light;
   color: $secondary-hdln-color;
 }

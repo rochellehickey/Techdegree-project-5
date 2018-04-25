@@ -2,6 +2,6 @@
 //               NAVIGATION
 // -------------------------------------
 
-.nav {
-  text-align: center;
+.nav__item a {
+  @extend %nav__item--link;
 }

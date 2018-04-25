@@ -1,9 +1,13 @@
 // -------------------------------------
-//                LINKS
+//           LINKS PLACEHOLDER
 // -------------------------------------
 
-.link {
+%link {
   color: $link-color;
   font-weight: $font-weight-bold;
   text-decoration: none;
+}
+
+%corner-radius {
+  border-radius: em(3px) em(3px);
 }
