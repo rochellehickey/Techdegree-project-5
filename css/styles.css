@@ -9,6 +9,9 @@
   font-weight: 100;
   color: #5a5a5a; }
 
+.img--frame {
+  width: 100%; }
+
 .link {
   color: #64ddfb;
   font-weight: 600;
@@ -19,7 +22,7 @@
 .btn--error,
 .btn--warning,
 .btn--info, .blockquote {
-  border-radius: 0.1875em 0.1875em; }
+  border-radius: 0.3125em 0.3125em; }
 
 .nav__item a {
   text-decoration: none;
@@ -375,8 +378,24 @@ p {
 .btn--info.theme__colors {
   background: #927bc1; }
 
+.form__label--hidden {
+  display: none; }
+
 .form__input {
-  border: none; }
+  width: 100%;
+  padding: 0.625em;
+  margin: 1.25em 0;
+  border: none;
+  border-bottom: 0.3125em solid #6ee2c1; }
+
+.img--frame {
+  padding: 0.625em;
+  margin: 1.25em 0;
+  border: 1px solid #808080; }
+
+.img--avatar {
+  margin: 0 auto;
+  display: block; }
 
 .container {
   font-family: "Helvetica Neue", Helvetica, sans-serif;

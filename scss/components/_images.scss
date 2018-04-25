@@ -1,3 +1,15 @@
 // -------------------------------------
-//                 IMAGES
+//              IMAGES
 // -------------------------------------
+
+.img--frame {
+  @extend %image-width;
+  padding: em(10px);
+  margin: em(20px) 0;
+  border: 1px solid $img-border-color;
+}
+
+.img--avatar {
+  margin: 0 auto;
+  display: block;
+}
