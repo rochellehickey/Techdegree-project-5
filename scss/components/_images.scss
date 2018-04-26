@@ -13,6 +13,11 @@
   padding: em(10px);
   margin: em(20px) 0;
   border: 1px solid $img-bdr-color;
+
+  @media($media-screen-xlg) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .img--avatar {

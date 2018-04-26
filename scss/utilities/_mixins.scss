@@ -5,4 +5,22 @@
 // ----------- MEDIA QUERIES -----------
 
 
+@mixin sm {
+  @media (min-width: #{$media-screen-sm}) {
+      @content;
+  }
+}
+
+@mixin med {
+  @media (min-width: #{$media-screen-med}) {
+     @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$media-screen-lg}) {
+     @content;
+  }
+}
+
 // ---------- FLEXBOX SETTINGS ---------
