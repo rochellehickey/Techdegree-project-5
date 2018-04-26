@@ -1,3 +1,54 @@
 // -------------------------------------
 //                  GRID
 // -------------------------------------
+
+.grid__row {
+  margin: em(38px) 0;
+}
+
+.grid__col--2.theme__colors,
+.grid__col--3.theme__colors,
+.grid__col--4.theme__colors,
+.grid__col--5.theme__colors,
+.grid__col--6.theme__colors,
+.grid__col--7.theme__colors,
+.grid__col--8.theme__colors,
+.grid__col--9.theme__colors,
+.grid__col--10.theme__colors,
+.grid__col--11.theme__colors,
+.grid__col--12.theme__colors {
+  @extend %corner-radius;
+  width: 100%;
+  margin: em(5px) 0;
+  color: $font-grid-color;
+  padding: em(13px);
+}
+
+.grid__col--3.theme__colors {
+  background: $grid-col-3-color;
+}
+
+.grid__col--4.theme__colors {
+  background: $grid-col-4-color;
+}
+
+.grid__col--5.theme__colors {
+  background: $grid-col-5-color;
+}
+
+.grid__col--6.theme__colors {
+  background: $grid-col-6-color;
+}
+
+.grid__col--7.theme__colors {
+  background: $grid-col-7-color;
+}
+
+.grid__col--8.theme__colors {
+  background: $grid-col-8-color;
+}
+
+.grid__col--12.theme__colors {
+  background: $grid-col-12-color;
+}
+

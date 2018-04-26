@@ -24,19 +24,19 @@ $flamingo    : #e47479;
 $pumpkin     : #ed7553;
 $violet      : #927bc1;
 
-$cyan-light      : lighten(#64ddfb, 20%);
-$mint-light      : lighten(#6ee2c1, 20%);
-$evergreen-light : lighten(#66cc82, 20%);
-$flamingo-light  : lighten(#e47479, 20%);
-$pumpkin-light   : lighten(#ed7553, 20%);
+$cyan-light      : lighten(#64ddfb, 10%);
+$mint-light      : lighten(#6ee2c1, 10%);
+$evergreen-light : lighten(#66cc82, 10%);
+$flamingo-light  : lighten(#e47479, 10%);
+$pumpkin-light   : lighten(#ed7553, 10%);
 $violet-light    : lighten(#927bc1, 20%);
 
-$cyan-dark       : darken(#64ddfb, 20%);
-$mint-dark       : darken(#6ee2c1, 20%);
-$evergreen-dark  : darken(#66cc82, 20%);
-$flamingo-dark   : darken(#e47479, 20%);
-$pumpkin-dark    : darken(#ed7553, 20%);
-$violet-dark     : darken(#927bc1, 20%);
+$cyan-dark       : darken(#64ddfb, 30%);
+$mint-dark       : darken(#6ee2c1, 10%);
+$evergreen-dark  : darken(#66cc82, 10%);
+$flamingo-dark   : darken(#e47479, 10%);
+$pumpkin-dark    : darken(#ed7553, 10%);
+$violet-dark     : darken(#927bc1, 10%);
 
 $grey-light      : #808080;
 $grey-dark       : #5a5a5a;
@@ -46,20 +46,30 @@ $white           : #fff;
 
 $font-color           : $grey-light;
 $font-nav-color       : $grey-dark;
-$nav-btn-color        : $mint;
+$font-grid-color      : $grey-light;
+
 $primary-hdln-color   : $mint;
 $secondary-hdln-color : $grey-dark;
+
 $link-color           : $cyan;
+
+$nav-btn-color        : $mint;
 $default-btn-color    : $cyan;
 $success-btn-color    : $evergreen;
 $error-btn-color      : $flamingo;
 $warning-btn-color    : $pumpkin;
 $info-btn-color       : $violet;
+
 $btn-text-color       : $white;
+
 $blockquote-bdr-color : $mint;
 $form-bdr-color       : $mint;
-$img-border-color     : $grey-light;
+$img-bdr-color        : $grey-light;
 
-
-
-
+$grid-col-3-color     : $violet-light;
+$grid-col-4-color     : $cyan-light;
+$grid-col-5-color     : $evergreen-light;
+$grid-col-6-color     : $cyan-dark;
+$grid-col-7-color     : $flamingo-light;
+$grid-col-8-color     : $pumpkin-light;
+$grid-col-12-color    : $mint-light;
