@@ -4,6 +4,12 @@
 
 .grid__row {
   margin: em(38px) 0;
+
+  @include med {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .grid__col--2.theme__colors,
