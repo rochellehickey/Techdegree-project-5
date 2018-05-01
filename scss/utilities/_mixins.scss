@@ -24,3 +24,53 @@
 }
 
 // ---------- FLEXBOX SETTINGS ---------
+
+// Container Mixin
+
+@mixin grid(($g-col-width + $g-gutter-width) * $g-col-count) {
+
+  $container: $width;
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  flex: 0 1 auto;
+
+  max-width: $g-cont-max-w;
+  margin: 0 auto;
+
+}
+
+// Column Mixin
+
+@mixin column($span: $columns) {
+
+  $columns: $span;
+
+  box-sizing: border-box;
+  flex: $columns $columns auto;
+  flex-basis: $columns;
+  max-width: $columns;
+
+  padding-right: $gutter;
+  padding-left: $gutter;
+  padding-bottom: $gutter*2;
+
+}
+
+
+
+
+$g-col-width         : 75px;
+$g-gutter-width      : 15px;
+$g-col-count         : 12;
+$g-cont-max-w        : 1050px;
+
+
+
+
+
+
+
+
+

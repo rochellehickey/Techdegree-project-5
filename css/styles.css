@@ -1,45 +1,38 @@
 /*
-Error: Invalid CSS after "    display": expected ";", was ": flex;"
-        on line 26 of scss/components/_grid.scss
-        from line 7 of scss/components/_index.scss
-        from line 7 of scss/styles.scss
+Error: Invalid CSS after "@mixin grid(": expected variable (e.g. $foo), was "($g-col-width +..."
+        on line 30 of scss/utilities/_mixins.scss
+        from line 7 of scss/utilities/_index.scss
+        from line 5 of scss/styles.scss
 
-21:     }
-22:     margin-left: auto;
-23:     margin-right: auto;
-24:     width: 90%
 25: 
-26:     display: flex;
-27:     flex-direction: row;
-28:     justify-content: flex-start;
-29:   }
-30: }
+26: // ---------- FLEXBOX SETTINGS ---------
+27: 
+28: // Container Mixin
+29: 
+30: @mixin grid(($g-col-width + $g-gutter-width) * $g-col-count) {
 31: 
+32:   $container: $width;
+33: 
+34:   display: flex;
+35:   flex-direction: row;
 
 Backtrace:
-scss/components/_grid.scss:26
-scss/components/_index.scss:7
-scss/styles.scss:7
+scss/utilities/_mixins.scss:30
+scss/utilities/_index.scss:7
+scss/styles.scss:5
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:804:in `block in try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1254:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:809:in `try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:697:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:678:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:257:in `include_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/script/lexer.rb:231:in `expected!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/script/parser.rb:731:in `assert_tok'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/script/parser.rb:538:in `block in defn_arglist!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/script/parser.rb:536:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/script/parser.rb:536:in `defn_arglist!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/script/parser.rb:145:in `parse_mixin_definition_arglist'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1134:in `sass_script'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:244:in `mixin_directive'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:234:in `special_directive'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:209:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:697:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:678:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:670:in `ruleset'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:686:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
@@ -103,4 +96,4 @@ scss/styles.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"    display\": expected \";\", was \": flex;\"\A         on line 26 of scss/components/_grid.scss\A         from line 7 of scss/components/_index.scss\A         from line 7 of scss/styles.scss\A \A 21:     }\A 22:     margin-left: auto;\A 23:     margin-right: auto;\A 24:     width: 90%\A 25: \A 26:     display: flex;\A 27:     flex-direction: row;\A 28:     justify-content: flex-start;\A 29:   }\A 30: }\A 31: "; }
+  content: "Error: Invalid CSS after \"@mixin grid(\": expected variable (e.g. $foo), was \"($g-col-width +...\"\A         on line 30 of scss/utilities/_mixins.scss\A         from line 7 of scss/utilities/_index.scss\A         from line 5 of scss/styles.scss\A \A 25: \A 26: // ---------- FLEXBOX SETTINGS ---------\A 27: \A 28: // Container Mixin\A 29: \A 30: @mixin grid(($g-col-width + $g-gutter-width) * $g-col-count) {\A 31: \A 32:   $container: $width;\A 33: \A 34:   display: flex;\A 35:   flex-direction: row;"; }
