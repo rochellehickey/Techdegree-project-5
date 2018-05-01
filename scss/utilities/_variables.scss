@@ -15,7 +15,7 @@ $font-weight-bold    : 600;
 // ------------- BREAKPOINTS -----------
 
 $media-screen-sm   : 480px;
-$media-screen-med  : 767px;
+$media-screen-med  : 769px;
 $media-screen-lg   : 1200px;
 
 
@@ -77,3 +77,21 @@ $grid-col-6-color     : $cyan-dark;
 $grid-col-7-color     : $flamingo-light;
 $grid-col-8-color     : $pumpkin-light;
 $grid-col-12-color    : $mint-light;
+
+
+
+// ---------------- GRID ----------------
+
+$g-col-width         : 75px;
+$g-gutter-width      : 15px;
+$g-col-count         : 12;
+$g-cont-max-w        : 1050px;
+
+
+
+
+
+
+
+
+
