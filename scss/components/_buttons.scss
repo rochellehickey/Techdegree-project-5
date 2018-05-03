@@ -16,6 +16,14 @@
   width: 100%;
   color: $btn-text-color;
   text-transform: uppercase;
+
+  @include med {
+    margin: 0 em(15px) em(15px) em(15px);
+    width: auto;
+    display: inline-block;
+    padding-left: em(40px);
+    padding-right: em(40px);
+  }
 }
 
 .btn--default.theme__colors {
@@ -37,3 +45,4 @@
 .btn--info.theme__colors {
   background: $info-btn-color;
 }
+

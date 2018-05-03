@@ -7,9 +7,14 @@
 }
 
 .form__input {
-  width: 100%;
+  width: 90%;
   padding: em(10px);
-  margin: em(18px) 0;
+  margin: em(18px) 5%;
   border: none;
   border-bottom: em(5px) solid $form-bdr-color;
+}
+
+.form .btn--default {
+  width: 100%;
+  margin: 0;
 }

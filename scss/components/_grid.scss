@@ -6,20 +6,12 @@
   margin: em(38px) 0;
 
   @include med {
-
-    // Calculate Grid Columns
-
-    @for $i from 1 through $g-col-count {
-
-      $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
-      $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
-
-        //Generate column modifier classes
-        .grid__col--#{$i} {
-          width: percentage($target / $context);
-        }
-    }
+    @include grid-row;
   }
+}
+
+[class*="grid__col--"] {
+  width: 100%;
 }
 
 .grid__col--2.theme__colors,
@@ -34,8 +26,8 @@
 .grid__col--11.theme__colors,
 .grid__col--12.theme__colors {
   @extend %corner-radius;
-  width: 100%;
-  margin: em(5px) 0;
+  margin-top: em(5px);
+  margin-bottom: em(5px);
   color: $font-grid-color;
   padding: em(13px);
 }
@@ -66,5 +58,9 @@
 
 .grid__col--12.theme__colors {
   background: $grid-col-12-color;
+}
+
+.centered {
+  margin: 0 auto !important;
 }
 

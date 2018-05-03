@@ -11,6 +11,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+
+    margin-bottom: 0;
   }
 }
 
@@ -19,9 +21,13 @@
   padding: em(10px);
   margin: em(20px) 0;
   border: 1px solid $img-bdr-color;
+
+  align-self: start;
 }
 
 .img--avatar {
   margin: 0 auto;
   display: block;
+
+  align-self: start;
 }
